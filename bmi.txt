@@ -1,0 +1,25 @@
+class BMI(object):
+    
+    def __init__(self,weight,height):
+        self.weight = weight 
+        self.height = height 
+        
+    @property
+    def calculation(self):
+        bmi = self.weight /(self.height)**2
+        return bmi
+    
+    def check(self):
+        if self.calculation > 25:
+            print('obese')
+            
+        else:
+            print('its normal')
+            
+#weight in KG!! #height in CM   
+         
+b = BMI(70,175)
+print(b.calculation)
+b.check()
+
+        
