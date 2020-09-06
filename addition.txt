@@ -1,0 +1,16 @@
+class Addition(object):
+    
+    def __init__(self, a, b):
+        self.a = a 
+        self.b = b
+        
+    def process(self):
+        x = self.a + self.b
+        print(x)
+
+#here I used only addition alone! you guys can play around with it!!! 
+        
+if __name__ == '__main__':
+
+    a = Addition(5,5)
+    a.process()
