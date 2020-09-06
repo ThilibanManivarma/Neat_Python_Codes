@@ -17,9 +17,11 @@ class BMI(object):
             print('its normal')
             
 #weight in KG!! #height in CM   
-         
-b = BMI(70,175)
-print(b.calculation)
-b.check()
+
+if __name__ == '__main__':
+
+    b = BMI(70,175)
+    print(b.calculation)
+    b.check()
 
         
