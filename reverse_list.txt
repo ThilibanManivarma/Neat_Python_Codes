@@ -15,7 +15,7 @@ class Reverse(object):
         print(self.list1)
     
     
-if '__name__' == '__main__':
+if __name__ == '__main__':
     
     r = Reverse([5,4,3,21])
     r.process()
