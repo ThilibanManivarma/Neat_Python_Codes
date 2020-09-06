@@ -1,0 +1,21 @@
+class Reverse(object):
+    
+    def __init__(self, list1):
+        self.list1 = list1 
+        
+    def process(self):
+        for i in range(len(self.list1)):
+            mid = i
+            for j in range(i+1, len(self.list1)):
+                if self.list1[j] < self.list1[mid]:
+                    mid = j
+                    
+            self.list1[i], self.list1[mid] = self.list1[mid], self.list1[i]
+            
+        print(self.list1)
+    
+    
+if '__name__' == '__main__':
+    
+    r = Reverse([5,4,3,21])
+    r.process()
