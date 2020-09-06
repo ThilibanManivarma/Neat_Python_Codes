@@ -1,0 +1,19 @@
+class All(object):
+    
+    def __init__(self, *args):
+        self.args = args 
+        self.sum1 = 0
+        
+    def addition(self):
+        for i in self.args:
+            self.sum1 = self.sum1 + i
+            
+        print(self.sum1)
+
+#here i used *args , so that we can able to add whatever the numbers we want! 
+
+if __name__ == '__main__':
+    
+    a = All(1,2,3,4)
+    a.addition()
+        
