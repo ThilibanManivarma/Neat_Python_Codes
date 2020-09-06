@@ -1,0 +1,18 @@
+class Largest(object):
+    
+    def __init__(self, listx):
+        self.listx = listx 
+        
+    def check(self):
+        for i in range(len(self.listx)):
+            if (self.listx[i]) < max(self.listx):
+                continue
+                
+            else:
+                print('Highest number from the list is ' + str(self.listx[i]))
+                
+
+if __name__ == '__main__':
+
+    l = Largest([1,4,10,100,999])
+    l.check()
